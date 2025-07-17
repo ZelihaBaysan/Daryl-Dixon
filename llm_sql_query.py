@@ -39,7 +39,7 @@ sql_database = SQLDatabase(
 
 # Ollama LLM ayarları
 llm = Ollama(
-    model="phi3",
+    model="gemma:2b",
     request_timeout=300.0,
     num_gpu=0,
     num_thread=2,
