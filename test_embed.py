@@ -18,10 +18,10 @@ Settings.embed_model = HuggingFaceEmbedding(
 
 # Hafif Ollama modeli
 Settings.llm = Ollama(
-    model="phi3",  # Daha küçük model
+    model="gemma:2b",  # Daha küçük model
     request_timeout=120,  # Uzun timeout
     num_gpu=0,  # GPU kullanma
-    num_thread=2  # CPU thread sınırı
+    system_prompt="Sen Türkçe konuşan bir belge asistanısın. Kullanıcı PDF, Word, metin belgeleri yükler. Onlara bu belgelerle ilgili özetler ve içerik verirken Türkçe ve doğal şekilde konuş."
 )
 
 # Belgeleri parçalara ayırarak yükle
