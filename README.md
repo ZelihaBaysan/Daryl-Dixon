@@ -4,7 +4,7 @@ I'm currently preparing for my internship.
 
 ![daryl](./images/daryl-dixon.gif)
 
-```
+
 # Daryl Dixon 🚀
 
 **Doğal Dil → SQL + Embedding ile Akıllı Sorgulama Sistemi**
@@ -48,7 +48,7 @@ Staj sürecinde SQL, LLM ve belge analizi konularında pratik yapmak amacıyla g
 
 ## 📂 Dosya Yapısı
 
-```
+
 
 Daryl-Dixon/
 ├── data/                  → Kullanılan PDF ve belgeler
@@ -59,7 +59,7 @@ Daryl-Dixon/
 ├── requirements.txt       → Python bağımlılıkları
 └── README.md              → Proje dokümantasyonu (bu dosya)
 
-````
+
 
 ---
 
@@ -160,38 +160,4 @@ Ek olarak sistemde:
 * 🟢 Ollama kurulumu ([https://ollama.com/download](https://ollama.com/download))
 
 ---
-
-
-**Not:** Bu README, `main` ve `sql` branch’lerine özel bilgilerle uyumlu olacak şekilde tasarlanmıştır. Her branch’in kendi sorumluluğu farklıdır.
-
-````
-
----
-
-## ➕ Ekstra: README'yi Otomatik Kaydetmek
-
-Eğer bu yeni README’yi doğrudan `sql` branch’ine eklemek istersen:
-
-### 1. `sql` branch'inde olduğundan emin ol:
-```bash
-git checkout sql
-````
-
-### 2. README dosyasını kaydet:
-
-```bash
-notepad README.md
-# (İçeriği yapıştır, kaydet)
-```
-
-### 3. Commit ve push:
-
-```bash
-git add README.md
-git commit -m "README güncellendi: SQL branch için detaylı açıklama"
-git push origin sql
-```
-
----
-
 
