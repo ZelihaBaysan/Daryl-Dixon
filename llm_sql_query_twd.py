@@ -1,6 +1,4 @@
 import pyodbc
-from dotenv import load_dotenv
-load_dotenv()
 from sqlalchemy import create_engine, inspect, URL
 from llama_index.core import SQLDatabase
 from llama_index.core.query_engine import NLSQLTableQueryEngine
