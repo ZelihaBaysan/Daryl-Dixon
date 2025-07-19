@@ -50,15 +50,15 @@ Staj sürecinde SQL, LLM ve belge analizi konularında pratik yapmak amacıyla g
 
 
 
-Daryl-Dixon/
-├── data/                  → Kullanılan PDF ve belgeler
-├── storage/               → Embedding ve vektör indeksleri
-├── llm\_sql\_query.py       → LLM ile Türkçe doğal dil → SQL çevirici
-├── sql\_query.py           → Doğrudan SQL sorgusu çalışan test scripti
-├── test\_embed.py          → Belgelerden embedding çıkaran test scripti
-├── requirements.txt       → Python bağımlılıkları
-└── README.md              → Proje dokümantasyonu (bu dosya)
-
+ Daryl-Dixon/
+ ├── data/                  → Kullanılan PDF ve belgeler
+ ├── storage/               → Embedding ve vektör indeksleri
+ ├── llm_sql_query.py       → LLM ile Türkçe doğal dil → SQL çevirici
+ ├── llm_sql_query_twdd.py  → The Walking Dead veritabanı özelinde doğal dil → SQL sorgu motoru ✅
+ ├── sql_query.py           → Doğrudan SQL sorgusu çalışan test scripti
+ ├── test_embed.py          → Belgelerden embedding çıkaran test scripti
+ ├── requirements.txt       → Python bağımlılıkları
+ └── README.md              → Proje dokümantasyonu (bu dosya)
 
 
 ---
@@ -138,6 +138,9 @@ Oluşturulan SQL: SELECT TOP 5 * FROM documents ORDER BY created_at DESC
 * HuggingFace ile embedding (vektör) çıkarır
 * `VectorStoreIndex` oluşturur ve `query_engine` ile anlamlı arama yapar
 
+### ✅ `llm_sql_query_twdd.py`
+
+**The Walking Dead** temalı özel veritabanı için doğal dil → SQL sorgu motorudur.
 ---
 
 ## 📌 Bağımlılıklar
